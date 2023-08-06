@@ -2,7 +2,7 @@
 
 require_once("config.php");
 
-class LinkShortener {
+class Linky {
 
     public mysqli $db;
 
