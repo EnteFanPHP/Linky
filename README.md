@@ -2,7 +2,7 @@
 
 With this tool you can shorten urls
 
-## USAGE
+## Installation
 
 > Follow these steps to set up the tool:
 
@@ -16,3 +16,29 @@ Step 3: Open `config.php` and customize the variables
 <br>
 <br>
 Step 4: Implement the `linky.php` file into your code and you are ready to go!
+
+## Usage
+
+### Generating short URL's <br>
+Before the usage make sure that the `.htaccess` file is in your Web-Server folder!<br>
+Without this file the programme will not work!
+
+```htaccess
+
+
+
+```
+
+PHP Code to generate shorten Url's:
+
+ ```php
+   <?php
+   require_once("linky.php");
+   
+   $linky = new Linky();
+
+   $sUrl = $linky->shortURL("https://www.google.com");
+
+   echo $sUrl; // echo the shortened Url
+   
+   ```
