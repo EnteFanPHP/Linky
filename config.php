@@ -12,11 +12,4 @@ class Config {
         "http",
         "https"
     ];
-
-    // DATABASE CONNECTION
-
-    public $db_server_name = "localhost";
-    public $db_username = "root";
-    public $db_pwd = "";
-    public $db_db = "linkshortener";
 }
