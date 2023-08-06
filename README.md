@@ -20,13 +20,14 @@ Step 4: Implement the `linky.php` file into your code and you are ready to go!
 ## Usage
 
 ### Generating short URL's <br>
-Before the usage make sure that the `.htaccess` file is in your Web-Server folder!<br>
+Before the usage make sure that the `.htaccess` file is in your main dir!<br>
 Without this file the programme will not work!
 
-```htaccess
-
-
-
+```.htaccess
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ main.php?k=$1 [QSA,L]
 ```
 
 PHP Code to generate shorten Url's:
