@@ -12,4 +12,7 @@ Step 1: Download the Zip-Archive on your Device ([Download](https://github.com/E
 Step 2: Extract the Zip-Archive and copy all file's except the `README.md` file into your Web-Server folder
 <br>
 <br>
-Step 3: Set
+Step 3: Open `config.php` and customize the variables
+<br>
+<br>
+Step 4: Implement the `linky.php` file into your code and you are ready to go!
