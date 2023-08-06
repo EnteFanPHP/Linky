@@ -1,7 +1,7 @@
 <?php
 
-require_once("shortener.php");
+require_once("linky.php");
 
-$short = new LinkShortener();
+$linky = new Linky();
 
-$short->run();
+$linky->run();
